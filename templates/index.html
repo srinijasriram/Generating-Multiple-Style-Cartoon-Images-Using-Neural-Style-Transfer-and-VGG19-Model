@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <title>Cartoonification of images</title>
+</head>
+<body>
+    <div class="container-page">
+        <div class="left-design">
+           
+        </div>
+        <div class="center-design">
+            <div class="content-image-style">
+                <div>
+                    <h1>CARTOONIFICATION OF IMAGES</h1>
+                </div>
+                <!--<div class="instructions-block">
+                    <h2 id="instruction">Instructions</h2>
+                    <ol>
+                        <li>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus cumque tempore vero?
+                        </li>
+                        <li>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, placeat incidunt! Tempore!
+                        </li>
+                        <li>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quod sint repellendus.
+                        </li>
+                    </ol>
+                </div>-->
+            </div>
+            <div class="default-image-styles">
+                    <div>
+                        <h2>Default Styles</h2>
+                    </div>
+                <form action=/upload_file method=post enctype=multipart/form-data target="_blank">
+                    <div class="default-images">
+                        <div class="styles">
+                            <img src="{{ url_for('static', filename='styles/images/style_1.jpeg') }}" alt="style1">
+                            <p>
+                            <input type="checkbox" name="default_style" id="style-1" value="style_1">
+                            <label for="style-1">Style-1</label>
+                            </p>
+                        </div>
+                        <div class="styles">
+                            <img src="{{ url_for('static', filename='styles/images/style_2.jpeg') }}" alt="style2">
+                            <p>
+                            <input type="checkbox" name="default_style" id="style-2" value="style_2">
+                            <label for="style-2">Style-2</label>
+                            </p>
+                        </div>
+                        <div class="styles">
+                            <img src="{{ url_for('static', filename='styles/images/style_3.jpeg') }}" alt="style3">
+                            <p>
+                            <input type="checkbox" name="default_style" id="style-3" value="style_3">
+                            <label for="style-3">Style-3</label>
+                            </p>
+                        </div>
+                        <div class="styles">
+                            <img src="{{ url_for('static', filename='styles/images/style_4.jpeg') }}" alt="style4">
+                            <p>
+                            <input type="checkbox" name="default_style" id="style-4" value="style_4">
+                            <label for="style-4">Style-4</label>
+                            </p>
+                        </div>
+                        <div class="styles">
+                            <img src="{{ url_for('static', filename='styles/images/style_5.jpeg') }}" alt="style5">
+                            <p>
+                            <input type="checkbox" name="default_style" id="style-5" value="style_5">
+                            <label for="style-5">Style-5</label>
+                            </p>
+                        </div>
+                        <div class="styles">
+                            <img src="{{ url_for('static', filename='styles/images/style_6.jpeg') }}" alt="style6">
+                            <p>
+                            <input type="checkbox" name="default_style" id="style-6" value="style_6">
+                            <label for="style-6">Style-6</label>
+                            </p>
+                        </div>
+                        <div class="styles">
+                            <img src="{{ url_for('static', filename='styles/images/style_7.jpeg') }}" alt="style7">
+                            <p>
+                            <input type="checkbox" name="default_style" id="style-7" value="style_7">
+                            <label for="style-7">Style-7</label>
+                            </p>
+                        </div>
+                        <div class="styles">
+                            <img src="{{ url_for('static', filename='styles/images/style_8.jpeg') }}" alt="style8">
+                            <p>
+                            <input type="checkbox" name="default_style" id="style-8" value="style_8">
+                            <label for="style-8">Style-8</label>
+                            </p>
+                        </div>
+                    </div>
+                   <!--<div class="upload-button">
+                        <button>Upload</button>
+                    </div>-->
+
+                    <br></br>
+                    
+                    <div class="upload-button">
+                        <h2>User Image </h2>
+                        <input type="file" id="content_file" name="content_file">
+                    </div><br></br>
+                    
+                    <div class="upload-button">
+                        <h2>User Style </h2>
+                        <input type="file" id="style_files" name="style_files" multiple >
+                    </div><br></br> 
+                    <div class="upload-button">
+                        <input type="submit">
+                    </div>
+                    <br></br>
+                </form>
+            </div>
+
+
+
+        </div>
+        <div class="right-design">
+
+        </div>
+    </div>
+</body>
+</html>
